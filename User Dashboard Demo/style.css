@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+body
+{
+    
+    background-color: #f9fbfd;
+}
+
+.main_body
+{
+  display: flex;
+  
+}
+.sidebar  {
+
+  margin: 20px;
+  height: 100vph;
+  width: 100px;
+  background-color: #6aab9c;
+  border-radius: 20px;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+}
+
+
+.sidebar .drop.dropdownOn li  {
+
+  display: flex;
+  justify-content: flex-start;
+
+  color: white;
+ 
+  display: none;
+}
+
+.sidebar.activate .drop.dropdownOn li
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  color: white;
+ 
+  
+}
+
+
+ 
+.sidebar .link_name
+{
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.sidebar.activate .link_name
+{
+  opacity: 1;
+}
+
+.sidebar.activate 
+{
+    width: 293px;
+    
+}
+
+
+
+.sidebar .header {
+  
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+  /* gap: 10px; */
+}
+
+.sidebar .footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sidebar.activate .header i {
+  font-size: 80px;
+  color: white;
+  
+}
+
+.sidebar .header i 
+{
+  font-size: 80px;
+  color: white;
+  margin-left: 55px;
+}
+.sidebar .footer .btn {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.sidebar .list_names {
+  text-align: center;
+  margin-top: 60px;
+  display: grid;
+  gap: 40px;
+
+  list-style: none;
+}
+
+
+.drop li {
+
+ 
+ 
+    display: none;
+}
+
+
+.drop.dropdownOn li
+{
+    
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+   
+}
+
+.sidebar .list_names li
+{
+  padding: 10px 0px;
+}
+.sidebar .list_names li:hover
+{ 
+
+  background-color: #00f7bd67;
+  
+
+}
+
+
+ .drop_down_btn {
+
+  transition: all 0.5s ease;
+}
+
+
+ .drop_down_btn.rotate
+{
+    
+    transform: rotate(180deg);
+}
+
+.sidebar .list_names li a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  transition: all 0.5s ease
+}
+
+
+.list_names li a i {
+  margin-left: 30px;
+  font-size: 40px;
+  color: white;
+  
+}
+
+.list_names li a span {
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.btn
+{
+  margin-top: 50px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover
+{
+  
+  border: 1px solid #00f7bd67;
+  border-radius: 40px;
+  border-color: rgba(0, 0, 0, 0.199);
+ 
+  
+}
+
+.sidebar.activate .btn
+{
+  transform:rotate(0deg);
+}
+.sidebar .btn 
+{
+  transform:rotate(180deg);
+}
+.container
+{
+    
+    display: flex;
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 100px;
+    gap:40px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+ 
+
+
+.container .admin
+{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.container .admin i 
+{
+  font-size: 25px;
+  width:20px
+}
+
+.container .search_box
+{
+  margin-top:50px;
+  display: flex;
+}
+
+.container .search_box .search 
+{
+  height: 30px;
+  width:200px;
+  border: 1px solid #efefef;
+  outline: none;
+  padding-right: 5px;
+}
+
+.container .search_box .search_btn
+{
+  height: 32px;
+  width: 30px;
+  margin-right: 2px;
+  border-width:thin;
+  border: none;
+  cursor: pointer;
+}
+
+.container .search_box .search_btn i 
+{
+  width: 100%;
+}
+
+/*        Right Side Bottom   */
+
+.users_lists
+{
+  display:inline;
+}
